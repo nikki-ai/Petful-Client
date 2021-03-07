@@ -56,7 +56,7 @@ class AdoptionPage extends React.Component {
   adoptCat = () => {
     ApiService.adoptCat().then(() => {
       this.setState({
-        pets: this.state.cats.splice(1),
+        cats: this.state.cats.splice(1),
         people: this.state.people.splice(1),
       });
     });
@@ -80,9 +80,9 @@ class AdoptionPage extends React.Component {
         } else {
           this.adoptDog();
         }
-        ApiService.addPerson('Kurapika').then(() => {
+        ApiService.addPerson('Killua Zoldyck').then(() => {
           this.setState({
-            people: [...this.state.people, 'Kurapika'],
+            people: [...this.state.people, 'Killua Zoldyck'],
           });
         });
       }, 5000);
