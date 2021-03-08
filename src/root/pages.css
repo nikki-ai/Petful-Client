@@ -9,6 +9,9 @@ body {
 }
 header {
   display: flex;
+  background-image: url('kisspng-dogcat-relationship-dogcat-relationship-pet-cats-and-dogs-5b3175b9c8a394.3723234915299680578218.png');
+  background-repeat: no-repeat;
+  background-size: contain;
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -30,6 +33,7 @@ a {
 }
 .title-text {
   color: white;
+  font-size: 30px;
 }
 main {
   color: rgb(75, 75, 88);
@@ -56,6 +60,9 @@ ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+      }
+      a {
+        padding-top: 50px;
       }
   }
 
