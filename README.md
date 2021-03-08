@@ -10,7 +10,7 @@ FIFO pet adoption centers mission is to ensure pets get adopted to healthy happy
 ![image](https://user-images.githubusercontent.com/72418388/110384085-ca86b000-8022-11eb-9c00-289664649ca4.png)
 
 ### Adoption Page
-![image](https://user-images.githubusercontent.com/72418388/110384215-f1dd7d00-8022-11eb-8c48-2c1f0755ec13.png)
+![image](https://user-images.githubusercontent.com/72418388/110373826-8e991e00-8015-11eb-838e-47196c400b61.png)
 
 ## Live app
 https://nikki-ai-petful.vercel.app
