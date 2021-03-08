@@ -1,15 +1,20 @@
-import REACT_APP_API_BASE from './config';
+import config from './config';
+
+const REACT_APP_API_BASE = config.REACT_APP_API_BASE;
 
 const ApiService = {
   getCat() {
+    console.log(REACT_APP_API_BASE);
     return fetch(`${REACT_APP_API_BASE}/pets/cats`)
       .then((res) => {
+        console.log(res);
         if (!res.ok) {
           return res.json().then((e) => Promise.reject(e));
         }
         return res.json();
       })
       .then((data) => {
+        console.log(data);
         return data;
       })
       .catch((error) => console.error(error));
