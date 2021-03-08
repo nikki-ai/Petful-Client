@@ -1,8 +1,8 @@
-import baseUrl from './config';
+import REACT_APP_API_BASE from './config';
 
 const ApiService = {
   getCat() {
-    return fetch(`${baseUrl}/pets/cats`)
+    return fetch(`${REACT_APP_API_BASE}/pets/cats`)
       .then((res) => {
         if (!res.ok) {
           return res.json().then((e) => Promise.reject(e));
@@ -16,7 +16,7 @@ const ApiService = {
   },
 
   adoptCat() {
-    return fetch(`${baseUrl}/pets/cats`, {
+    return fetch(`${REACT_APP_API_BASE}/pets/cats`, {
       method: 'DELETE',
       headers: {
         'content-Type': 'application/json',
@@ -25,7 +25,7 @@ const ApiService = {
   },
 
   getDog() {
-    return fetch(`${baseUrl}/pets/dogs`)
+    return fetch(`${REACT_APP_API_BASE}/pets/dogs`)
       .then((res) => {
         if (!res.ok) {
           return res.json().then((e) => Promise.reject(e));
@@ -39,7 +39,7 @@ const ApiService = {
   },
 
   adoptDog() {
-    return fetch(`${baseUrl}/pets/dogs`, {
+    return fetch(`${REACT_APP_API_BASE}/pets/dogs`, {
       method: 'DELETE',
       headers: {
         'content-type': 'application/json',
@@ -48,7 +48,7 @@ const ApiService = {
   },
   getPeople() {
     return (
-      fetch(`${baseUrl}/people`)
+      fetch(`${REACT_APP_API_BASE}/people`)
         .then((res) => {
           if (!res.ok) {
             return res.json().then((e) => Promise.reject(e));
@@ -62,7 +62,7 @@ const ApiService = {
     );
   },
   addPerson(name) {
-    return fetch(`${baseUrl}/people`, {
+    return fetch(`${REACT_APP_API_BASE}/people`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
